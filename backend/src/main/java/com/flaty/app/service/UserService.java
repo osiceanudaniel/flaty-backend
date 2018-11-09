@@ -1,7 +1,7 @@
 package com.flaty.app.service;
 
-import com.flaty.app.model.User;
-import com.flaty.app.model.UserType;
+import com.flaty.app.model.management.User;
+import com.flaty.app.model.management.UserType;
 import com.flaty.app.repository.UserRepository;
 import com.flaty.app.service.blueprints.UserServiceBlueprint;
 import org.springframework.beans.factory.annotation.Autowired;

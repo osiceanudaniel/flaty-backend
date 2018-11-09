@@ -1,4 +1,4 @@
-package com.flaty.app.model;
+package com.flaty.app.model.management;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,7 +12,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Table(name = "userstest")
+@Table(name = "users")
 public class User implements Serializable {
 
     @Id

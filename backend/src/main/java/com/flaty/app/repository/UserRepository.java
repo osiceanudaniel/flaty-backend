@@ -1,6 +1,6 @@
 package com.flaty.app.repository;
 
-import com.flaty.app.model.User;
+import com.flaty.app.model.management.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
