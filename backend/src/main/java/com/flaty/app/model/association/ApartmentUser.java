@@ -13,8 +13,8 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "appartment_users")
-public class AppartmentUser {
+@Table(name = "apartment_users")
+public class ApartmentUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,11 +26,11 @@ public class AppartmentUser {
     private User user;
 
     @OneToOne
-    @JoinColumn(name = "appartment_id", referencedColumnName = "id")
-    private Appartment appartment;
+    @JoinColumn(name = "apartment_id", referencedColumnName = "id")
+    private Apartment apartment;
 
-    //TODO: check flat/building ID
-
+    @Column(name = "building_id")
+    private Long buildingId;
 
     public Long getId() {
         return id;
@@ -44,11 +44,29 @@ public class AppartmentUser {
         this.user = user;
     }
 
-    public Appartment getAppartment() {
-        return appartment;
+    public Apartment getApartment() {
+        return apartment;
     }
 
-    public void setAppartment(Appartment appartment) {
-        this.appartment = appartment;
+    public void setApartment(Apartment apartment) {
+        this.apartment = apartment;
+    }
+
+    public Long getBuildingId() {
+        return buildingId;
+    }
+
+    public void setBuildingId(Long buildingId) {
+        this.buildingId = buildingId;
+    }
+
+    @Override
+    public String toString() {
+        return "ApartmentUser{" +
+                "id=" + id +
+                ", user=" + user +
+                ", apartment=" + apartment +
+                ", buildingId=" + buildingId +
+                '}';
     }
 }

@@ -16,6 +16,9 @@ public class Announce {
     @Column(name = "id")
     private Long id;
 
+    @Column(name = "apartment_id")
+    private Long apartmentId;
+
     @Column(name = "name")
     private String name;
 
@@ -24,6 +27,14 @@ public class Announce {
 
     public Long getId() {
         return id;
+    }
+
+    public Long getApartmentId() {
+        return apartmentId;
+    }
+
+    public void setApartmentId(Long apartmentId) {
+        this.apartmentId = apartmentId;
     }
 
     public String getName() {
@@ -42,5 +53,13 @@ public class Announce {
         this.content = content;
     }
 
-    //TODO: add more
+    @Override
+    public String toString() {
+        return "Announce{" +
+                "id=" + id +
+                ", apartmentId=" + apartmentId +
+                ", name='" + name + '\'' +
+                ", content='" + content + '\'' +
+                '}';
+    }
 }
