@@ -18,7 +18,7 @@ public class UserService implements UserServiceBlueprint {
 
     @Override
     public List<User> getAllUsers() {
-//        userRepository.save(createUser());
+        userRepository.save(createUser());
         return userRepository.findAll();
     }
 
