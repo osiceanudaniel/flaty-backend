@@ -41,8 +41,8 @@ public class Apartment {
     @Column(name = "current_balance")
     private Long currentBalance;
 
-    @Column(name = "unique_identifier")
-    private String unique_identifier;
+    @Column(name = "uniqueIdentifier")
+    private String uniqueIdentifier;
 
     public Long getId() {
         return id;
@@ -104,12 +104,12 @@ public class Apartment {
         this.currentBalance = currentBalance;
     }
 
-    public String getUnique_identifier() {
-        return unique_identifier;
+    public String getUniqueIdentifier() {
+        return uniqueIdentifier;
     }
 
-    public void setUnique_identifier(String unique_identifier) {
-        this.unique_identifier = unique_identifier;
+    public void setUniqueIdentifier(String uniqueIdentifier) {
+        this.uniqueIdentifier = uniqueIdentifier;
     }
 
     @Override
@@ -123,7 +123,7 @@ public class Apartment {
                 ", persons='" + persons + '\'' +
                 ", allocators=" + allocators +
                 ", currentBalance=" + currentBalance +
-                ", unique_identifier='" + unique_identifier + '\'' +
+                ", uniqueIdentifier='" + uniqueIdentifier + '\'' +
                 '}';
     }
 }
