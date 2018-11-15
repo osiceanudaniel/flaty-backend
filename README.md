@@ -1,5 +1,5 @@
 # Technologies
 * Java SpringBoot
-* MySQL
+* PostgreSQL
 * JPA
 * Maven
