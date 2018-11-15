@@ -33,7 +33,7 @@ public class Apartment {
     private Integer rooms;
 
     @Column(name = "persons")
-    private String persons;
+    private Integer persons;
 
     @Column(name = "allocators")
     private Integer allocators;
@@ -80,11 +80,11 @@ public class Apartment {
         this.rooms = rooms;
     }
 
-    public String getPersons() {
+    public Integer getPersons() {
         return persons;
     }
 
-    public void setPersons(String persons) {
+    public void setPersons(Integer persons) {
         this.persons = persons;
     }
 

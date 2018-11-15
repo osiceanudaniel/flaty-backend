@@ -3,6 +3,8 @@ package com.flaty.app.model.association.expenses;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -29,8 +31,9 @@ public class WaterMeterRead {
     @Column(name = "year")
     private Integer year;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "month")
-    private Integer month;
+    private Month month;
 
     @Column(name = "read_value")
     private Long readValue;
@@ -69,11 +72,11 @@ public class WaterMeterRead {
         this.year = year;
     }
 
-    public Integer getMonth() {
+    public Month getMonth() {
         return month;
     }
 
-    public void setMonth(Integer month) {
+    public void setMonth(Month month) {
         this.month = month;
     }
 

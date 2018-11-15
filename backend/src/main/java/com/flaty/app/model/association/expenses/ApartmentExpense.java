@@ -34,7 +34,7 @@ public class ApartmentExpense {
     private Integer year;
 
     @Column(name = "month")
-    private Integer month;
+    private Month month;
 
     @Column(name = "payment_board_id")
     private Long paymentBoardId;
@@ -87,11 +87,11 @@ public class ApartmentExpense {
         this.year = year;
     }
 
-    public Integer getMonth() {
+    public Month getMonth() {
         return month;
     }
 
-    public void setMonth(Integer month) {
+    public void setMonth(Month month) {
         this.month = month;
     }
 

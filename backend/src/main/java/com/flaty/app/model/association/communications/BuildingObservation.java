@@ -25,8 +25,8 @@ public class BuildingObservation {
     @Column(name = "title")
     private String title;
 
-    @Column(name = "observations")
-    private String observations;
+    @Column(name = "observation")
+    private String observation;
 
     public Long getId() {
         return id;
@@ -56,12 +56,12 @@ public class BuildingObservation {
         this.title = title;
     }
 
-    public String getObservations() {
-        return observations;
+    public String getObservation() {
+        return observation;
     }
 
-    public void setObservations(String observations) {
-        this.observations = observations;
+    public void setObservation(String observation) {
+        this.observation = observation;
     }
 
     @Override
@@ -71,7 +71,7 @@ public class BuildingObservation {
                 ", apartmentId=" + apartmentId +
                 ", associationId=" + associationId +
                 ", title='" + title + '\'' +
-                ", observations='" + observations + '\'' +
+                ", observation='" + observation + '\'' +
                 '}';
     }
 }

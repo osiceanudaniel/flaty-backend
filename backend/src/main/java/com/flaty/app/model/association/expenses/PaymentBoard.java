@@ -26,7 +26,7 @@ public class PaymentBoard {
     private Integer year;
 
     @Column(name = "month")
-    private Integer month;
+    private Month month;
 
     public Long getId() {
         return id;
@@ -56,11 +56,11 @@ public class PaymentBoard {
         this.year = year;
     }
 
-    public Integer getMonth() {
+    public Month getMonth() {
         return month;
     }
 
-    public void setMonth(Integer month) {
+    public void setMonth(Month month) {
         this.month = month;
     }
 
